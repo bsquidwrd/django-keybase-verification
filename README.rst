@@ -13,7 +13,7 @@ Quick start
     INSTALLED_APPS = [
         ...
         'django.contrib.sites',
-        'keybase_verification',
+        'keybase_verification',#
     ]
 
 2. Include the polls URLs in your project urls.py like this::

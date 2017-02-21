@@ -8,6 +8,8 @@ For each site, you will be able to create an record containing the verification 
 Quick start
 -----------
 
+* Install the package with `pip install django-keybase-verification`
+
 * Add "keybase_verification" and "django.contrib.sites" to your INSTALLED_APPS setting like this:
 
 ```python

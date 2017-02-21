@@ -8,19 +8,16 @@ For each site, you will be able to create an record containing the verification 
 Quick start
 -----------
 
-1. Add "keybase_verification" and "django.contrib.sites" to your INSTALLED_APPS setting like this::
+1. Add "keybase_verification" and "django.contrib.sites" to your INSTALLED_APPS setting like this:
 
-    ```PYTHON
     INSTALLED_APPS = [
         ...
         'django.contrib.sites',
         'keybase_verification',
     ]
-    ```
 
 2. Include the polls URLs in your project urls.py like this::
 
-    ```python
     from keybase_verification.views import KeybaseVerificationView
 
     urlpatterns = [
@@ -28,7 +25,6 @@ Quick start
         url(r'^keybase.txt', KeybaseVerificationView.as_view()),
         url(r'^.well-known/keybase.txt', KeybaseVerificationView.as_view()),
     ]
-    ```
 
 3. Run `python manage.py migrate` to create the polls models.
 

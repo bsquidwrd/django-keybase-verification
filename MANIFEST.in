@@ -2,6 +2,7 @@ include LICENSE
 include README.md
 exclude manage.py
 exclude db.sqlite3
+exclude requirements.txt
 recursive-include docs *
 recursive-exclude web *
 recursive-exclude env *

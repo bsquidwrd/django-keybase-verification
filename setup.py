@@ -17,7 +17,7 @@ setup(
     long_description=README,
     url='https://www.bsquidwrd.com/',
     author='bsquidwrd',
-    author_email='me@bsquidwrd.com',
+    author_email='pypi@bsquidwrd.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

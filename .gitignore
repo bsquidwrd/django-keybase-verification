@@ -1,5 +1,4 @@
 *.sqlite3
-**/__pycache__
 
 # Python .gitignore info
 # Byte-compiled / optimized / DLL files

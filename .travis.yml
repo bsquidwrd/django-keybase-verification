@@ -13,14 +13,14 @@ script:
     - python setup.py sdist
 
 deploy:
-  - provider: releases
+    provider: releases
     api_key:
         secure: GxvLlBwWRRt5NmyTb6AqfZowSQv/cZHHpS2JoXHhUMpVopjMyr+VDIWN8o+J7Vlj5AF9WXx8D0xpzfSOxG//LrHzNCSAfgX8HPSXkN1eE+bXQHaAkXnr7a1cqzTh5Dx5Sx1mprJMiUcLS7tCiMXW+I6UpMEWbOxg0lNCnLI+Ea87zN/+R/rQsrvxTFBI7h3hNx40/KgLsUa6yUpIteDx3cVVzGJOZCMVFI9uwtORp7ETBprhAGuIaHyxxUCStcSWE1WW2j9Fvz5/yN+rh/Nm9rEFysRIwb82IkpH9HOljVEEdAjtLMnfSpdOc7l2eAOJMJxkQHc/kPFs4HRsqgNw1Kvy8b1ew2pFhbDftSsuwaOZKPwU55b/VB5us5KMZ24MGgeFAbn8H/EI6BejmHLg/FKa1ProKE+/Av8GYJn/mGEBmwyXjD3GAGBYGZDU8PRuzOLLRFp1d2RsYf4EjGZfwDqpZLQgYBKy/ao9IXcBG7QKcMKndN2nNt5LpBuHjlifzZE4sfYyiFfFXyeziktYGbCNPKZVtN0ZYdFSnZ5HW5zenQhS8HB9eoLk5UqHv+l6EM70Kw6VGhtmGDcjPUEsD9DIwKWltWyLW8l/pJK7pjxiC6oEePGCwdeYDs024Wn5S1xjrm4t/xYEcIibS0dJCqyLH7TLNpCbNsvpkF+cxoc=
     file: dist/*
     on:
         repo: bsquidwrd/django-keybase-verification
 
-  - provider: pypi
+    provider: pypi
       skip_cleanup: true
       user: bsquidwrd
       password:

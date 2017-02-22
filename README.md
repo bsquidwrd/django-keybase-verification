@@ -1,5 +1,5 @@
 =====
-Keybase Verification
+Keybase Verification [![Build Status](https://travis-ci.org/bsquidwrd/django-keybase-verification.svg?branch=master)](https://travis-ci.org/bsquidwrd/django-keybase-verification)
 =====
 
 Keybase Verification is a simple Django app to allow easy verification of your domain for [keybase.io](http://keybase.io).

@@ -3,7 +3,7 @@ from django.contrib.sites.models import Site
 
 
 class KeybaseVerification(models.Model):
-    site = models.OneToOneField(Site)
+    site = models.OneToOneField(Site, on_delete=models.CASCADE)
     data = models.TextField(blank=True, null=True, help_text="Get this by visiting http://keybase.io")
 
     def __str__(self):

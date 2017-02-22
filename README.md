@@ -3,7 +3,7 @@ Keybase Verification
 =====
 
 Keybase Verification is a simple Django app to allow easy verification of your domain for [keybase.io](http://keybase.io).
-For each site, you will be able to create an record containing the verification information required by Keybase
+For each site, you will be able to create a record containing the verification information required by Keybase.
 
 Quick start
 -----------
@@ -20,19 +20,18 @@ INSTALLED_APPS = [
 ]
 ```
 
-* Include the polls URLs in your project urls.py like this::
+* Include the Keybase URLs in your project urls.py and make sure to import the `django.conf.urls.include` method like this:
 
 ```python
-from keybase_verification.views import KeybaseVerificationView
+from django.conf.urls import url, include
 
 urlpatterns = [
     ...
-    url(r'^keybase.txt', KeybaseVerificationView.as_view()),
-    url(r'^.well-known/keybase.txt', KeybaseVerificationView.as_view()),
+    url(r'^', include('keybase_verification.urls')),
 ]
 ```
 
-* Run `python manage.py migrate` to create the polls models.
+* Run `python manage.py migrate` to create the keybase_verification models.
 
 * Start the development server and visit http://127.0.0.1:8000/admin/ to create a site with the URL you are wanting to verify (in this case 127.0.0.1), then create a Keybase Verification for a particular site (you'll need the Admin app enabled).
 

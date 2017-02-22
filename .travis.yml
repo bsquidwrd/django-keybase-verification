@@ -13,18 +13,18 @@ script:
     - python setup.py sdist
 
 deploy:
-    provider: releases
+  - provider: releases
     api_key:
         secure: GxvLlBwWRRt5NmyTb6AqfZowSQv/cZHHpS2JoXHhUMpVopjMyr+VDIWN8o+J7Vlj5AF9WXx8D0xpzfSOxG//LrHzNCSAfgX8HPSXkN1eE+bXQHaAkXnr7a1cqzTh5Dx5Sx1mprJMiUcLS7tCiMXW+I6UpMEWbOxg0lNCnLI+Ea87zN/+R/rQsrvxTFBI7h3hNx40/KgLsUa6yUpIteDx3cVVzGJOZCMVFI9uwtORp7ETBprhAGuIaHyxxUCStcSWE1WW2j9Fvz5/yN+rh/Nm9rEFysRIwb82IkpH9HOljVEEdAjtLMnfSpdOc7l2eAOJMJxkQHc/kPFs4HRsqgNw1Kvy8b1ew2pFhbDftSsuwaOZKPwU55b/VB5us5KMZ24MGgeFAbn8H/EI6BejmHLg/FKa1ProKE+/Av8GYJn/mGEBmwyXjD3GAGBYGZDU8PRuzOLLRFp1d2RsYf4EjGZfwDqpZLQgYBKy/ao9IXcBG7QKcMKndN2nNt5LpBuHjlifzZE4sfYyiFfFXyeziktYGbCNPKZVtN0ZYdFSnZ5HW5zenQhS8HB9eoLk5UqHv+l6EM70Kw6VGhtmGDcjPUEsD9DIwKWltWyLW8l/pJK7pjxiC6oEePGCwdeYDs024Wn5S1xjrm4t/xYEcIibS0dJCqyLH7TLNpCbNsvpkF+cxoc=
     file: dist/*
     on:
         repo: bsquidwrd/django-keybase-verification
 
-    provider: pypi
-      skip_cleanup: true
-      user: bsquidwrd
-      password:
-          secure: ZG/StGeQtfK/kI62F/mdxDzp4aKxzrVAcNvZ5k309DMVeN2YSGfa8XgsQErOoD5ogXsYLTGpE5qS9QbxrvLvebmi+crO2qzxmZPtvwmIG5dkVD9xCgs8F0M6Yx1zR1xdMO5+iSHa4vuImYU2OdpfYCVDRmBXHhG/IoE+8Qxt+j8/ztEcJUg4iL4tnjwgoI0PcHu/RNwNaKMCOwxsxKN78QqCltkp8dOUIr1VYPDFjc3orZfZJdpYrCC1qq7sXXHoCeXN98/0lKS3PUAg9pJm9W2qtumD4BK2jLrcCKniVFrPJ+u55Igg4YdT2ON8tOLhTnIlbyVxl0mZvk2zzCH8w7lMXFKyhoORe6n997JvIuKvUmLtAHH1qMJttayqbEglHxn33sMMb1373ciP+J7kb0ApqvWPH3GwRchNpB8d4rA7htmr8KkJ78bwJ9md8ylGocarpQiccdpRWX+vj4gngcWoUHTbhjjufQL/qWKHix1YrIYKxmq16IEvQBN5UMGZcTWpsikoKyVzaEpoBex/vApjqlk73YVhBK8EzSGMHBVkCW4ogQmisg42kCUBOPU3JCjckWueiaS0PBWfJ3y4b02X2z/TyW7HS3TjCN5M4jKXHn1XKybdt3ltyXSt6N9s2mQZpFVAAhqDaPaKUH3kExNlbFmr8zaNI6sEjmqPsGA=
-      on:
-          tags: true
-          repo: bsquidwrd/django-keybase-verification
+  - provider: pypi
+    skip_cleanup: true
+    user: bsquidwrd
+    password:
+        secure: ZG/StGeQtfK/kI62F/mdxDzp4aKxzrVAcNvZ5k309DMVeN2YSGfa8XgsQErOoD5ogXsYLTGpE5qS9QbxrvLvebmi+crO2qzxmZPtvwmIG5dkVD9xCgs8F0M6Yx1zR1xdMO5+iSHa4vuImYU2OdpfYCVDRmBXHhG/IoE+8Qxt+j8/ztEcJUg4iL4tnjwgoI0PcHu/RNwNaKMCOwxsxKN78QqCltkp8dOUIr1VYPDFjc3orZfZJdpYrCC1qq7sXXHoCeXN98/0lKS3PUAg9pJm9W2qtumD4BK2jLrcCKniVFrPJ+u55Igg4YdT2ON8tOLhTnIlbyVxl0mZvk2zzCH8w7lMXFKyhoORe6n997JvIuKvUmLtAHH1qMJttayqbEglHxn33sMMb1373ciP+J7kb0ApqvWPH3GwRchNpB8d4rA7htmr8KkJ78bwJ9md8ylGocarpQiccdpRWX+vj4gngcWoUHTbhjjufQL/qWKHix1YrIYKxmq16IEvQBN5UMGZcTWpsikoKyVzaEpoBex/vApjqlk73YVhBK8EzSGMHBVkCW4ogQmisg42kCUBOPU3JCjckWueiaS0PBWfJ3y4b02X2z/TyW7HS3TjCN5M4jKXHn1XKybdt3ltyXSt6N9s2mQZpFVAAhqDaPaKUH3kExNlbFmr8zaNI6sEjmqPsGA=
+    on:
+        tags: true
+        repo: bsquidwrd/django-keybase-verification

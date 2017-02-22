@@ -1,5 +1,8 @@
 language: python
 python:
+    - '3'
+    - '3.4'
+    - '3.5'
     - '3.6'
 env:
     - DJANGO=1.10.5
@@ -11,6 +14,7 @@ script:
     - python manage.py migrate --noinput
     - python manage.py test
     - python setup.py sdist
+    - ls dist/
 
 deploy:
   - provider: releases

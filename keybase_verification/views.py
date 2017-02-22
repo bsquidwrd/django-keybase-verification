@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views import View
-from django.contrib.sites.models import Site
 from django.contrib.sites.shortcuts import get_current_site
 
 from keybase_verification.models import KeybaseVerification

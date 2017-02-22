@@ -1,6 +1,7 @@
 =====
 Keybase Verification
 [![Build Status](https://travis-ci.org/bsquidwrd/django-keybase-verification.svg?branch=master)](https://travis-ci.org/bsquidwrd/django-keybase-verification)
+[![Coverage Status](https://coveralls.io/repos/github/bsquidwrd/django-keybase-verification/badge.svg?branch=master)](https://coveralls.io/github/bsquidwrd/django-keybase-verification?branch=master)
 [![PyPI](https://img.shields.io/pypi/v/django-keybase-verification.svg)](https://pypi.python.org/pypi/django-keybase-verification/)
 [![PyPI](https://img.shields.io/pypi/pyversions/django-keybase-verification.svg)](https://pypi.python.org/pypi/django-keybase-verification/)
 =====

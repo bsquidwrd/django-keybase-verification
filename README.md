@@ -1,4 +1,3 @@
-=====
 Keybase Verification
 =====
 

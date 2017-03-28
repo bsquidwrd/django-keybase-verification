@@ -5,6 +5,7 @@ Keybase Verification
 [![Coverage Status](https://coveralls.io/repos/github/bsquidwrd/django-keybase-verification/badge.svg?branch=master)](https://coveralls.io/github/bsquidwrd/django-keybase-verification?branch=master)
 [![PyPI](https://img.shields.io/pypi/v/django-keybase-verification.svg)](https://pypi.python.org/pypi/django-keybase-verification/)
 [![PyPI](https://img.shields.io/pypi/pyversions/django-keybase-verification.svg)](https://pypi.python.org/pypi/django-keybase-verification/)
+[![Requirements Status](https://requires.io/github/bsquidwrd/django-keybase-verification/requirements.svg?branch=master)](https://requires.io/github/bsquidwrd/django-keybase-verification/requirements/?branch=master)
 
 Keybase Verification is a simple Django app to allow easy verification of your domain for [keybase.io](http://keybase.io).
 For each site, you will be able to create a record containing the verification information required by Keybase.

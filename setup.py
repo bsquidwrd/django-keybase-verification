@@ -15,7 +15,7 @@ setup(
     license='MIT License',
     description='A simple Django app to make Keybase.io verification easy.',
     long_description=README,
-    url='https://www.bsquidwrd.com/',
+    url='https://github.com/bsquidwrd/django-keybase-verification',
     author='bsquidwrd',
     author_email='pypi@bsquidwrd.com',
     classifiers=[

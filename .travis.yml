@@ -6,13 +6,6 @@ python:
 services: postgresql
 cache: pip
 
-addons:
-  apt:
-    sources:
-      - travis-ci/sqlite3
-    packages:
-      - sqlite3
-
 before_install:
     - export PIP_USE_MIRRORS=true
 

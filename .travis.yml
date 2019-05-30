@@ -3,6 +3,7 @@ python:
     - '3.5'
     - '3.6'
 
+services: postgresql
 cache: pip
 
 addons:
@@ -17,6 +18,9 @@ before_install:
 
 install:
     - pip install -r requirements.txt
+    
+before_script:
+    - psql -c "CREATE DATABASE travisci;" -U postgres
 
 script:
     - python manage.py migrate --noinput
